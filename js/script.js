@@ -45,7 +45,7 @@ function twoCardsforPlayer() {
         playerResult += parseInt(cards[CardIndex].dataset.value);
         playerCard.classList.add('activeforplayer');
         playerCard.style.left = playerCardPositionX + "vw";
-        playerCardPositionX += 2;
+        playerCardPositionX += 3.5;
         playerCard.style.zIndex = zIndex;
         zIndex++;
         cards.splice(CardIndex, 1);
@@ -138,7 +138,7 @@ function hitMe() {
         playerResult += parseInt(cards[CardIndex].dataset.value);
         playerCard.classList.add('activeforplayer');
         playerCard.style.left = playerCardPositionX + "vw";
-        playerCardPositionX += 2;
+        playerCardPositionX += 3.5;
         playerCard.style.zIndex = zIndex;
         zIndex++;
         cards.splice(CardIndex, 1);
@@ -164,7 +164,7 @@ function computerTurn() {
         document.querySelector(".computer").style.display = "block";
         computerCard.classList.add('activefordealer');
         computerCard.style.left = computerCardPositionX + "vw";
-        computerCardPositionX += 2;
+        computerCardPositionX += 3.5;
         computerCard.style.zIndex = zIndex;
         zIndex++;
         cards.splice(CardIndex, 1);
@@ -214,7 +214,7 @@ function getNewCard() {
         computerResult += parseInt(cards[CardIndex].dataset.value);
         computerCard.classList.add('activefordealer');
         computerCard.style.left = computerCardPositionX + "vw";
-        computerCardPositionX += 2;
+        computerCardPositionX += 3.5;
         computerCard.style.zIndex = zIndex;
         zIndex++;
         cards.splice(CardIndex, 1);

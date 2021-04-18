@@ -190,3 +190,120 @@ img.activeforplayer {
     line-height: 40px;
     text-align: center;
 }
+
+@media (max-width: 1366px) and (orientation: landscape) {
+
+    .dealer-spot,
+    .player-spot {
+        width: 300px;
+        height: 130px;
+
+    }
+
+    img {
+        width: 75px;
+    }
+
+    p.oczko,
+    p.perskieoczko {
+        left: 25vw;
+    }
+}
+
+@media (max-width: 1024px) and (orientation: landscape) {
+
+    .computer,
+    .player {
+        left: 30vw;
+    }
+}
+
+@media (max-width: 640px) and (orientation: landscape) {
+
+    .computer,
+    .player {
+        left: 20vw;
+    }
+
+    img {
+        width: 60px;
+    }
+
+    .dealer-spot,
+    .player-spot {
+        height: 100px;
+    }
+
+    .cards {
+        top: 1vh;
+    }
+
+    button {
+        top: 60vh;
+    }
+
+    div.total-results {
+        font-size: 16px;
+        left: 80vw;
+    }
+
+    .start {
+        left: 60vw;
+        transform: translate(-300%, -200%)
+    }
+}
+
+@media (max-width: 768px) and (orientation: portrait) {
+
+    .dealer-spot,
+    .player-spot {
+        width: 250px;
+    }
+
+    .start {
+        transform: translate(-100%, -400%);
+        left: 41vw;
+    }
+
+    .computer,
+    .player {
+        left: 25vw;
+    }
+}
+
+@media (max-width: 360px) and (orientation: portrait) {
+    img {
+        width: 80px;
+    }
+
+    .dealer-spot,
+    .player-spot {
+        height: 130px;
+
+    }
+
+    .cards {
+        top: 5vh;
+    }
+
+    .start {
+        top: 90vh;
+    }
+
+    div.total-results {
+        font-size: 16px;
+        top: 12vh;
+    }
+
+    p.oczko,
+    p.perskieoczko {
+        top: 65vh;
+    }
+
+    p.win,
+    p.draw,
+    p.loss {
+        top: 52vh;
+    }
+
+}
